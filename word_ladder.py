@@ -95,7 +95,7 @@ def _adjacent(word1, word2):
     if len(list) != 1:
         return False
     else:
-        return True 
+        return True
 
 
 def get_text(filename):
