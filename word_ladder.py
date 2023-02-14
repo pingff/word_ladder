@@ -56,6 +56,7 @@ def word_ladder(start_word, end_word, dictionary_file='words5.dict'):
                 dictionary.remove(word)
     return None
 
+
 def verify_word_ladder(ladder):
     '''
     Returns True if each entry of the input list is adjacent to its neighbors;
@@ -71,8 +72,9 @@ def verify_word_ladder(ladder):
     for i in range(len(ladder)):
         if i == len(ladder) - 1:
             return True
-        if not _adjacent(ladder[i], ladder[i+1]):
+        if not _adjacent(ladder[i], ladder[i + 1]):
             return False
+
 
 def _adjacent(word1, word2):
     '''
@@ -94,6 +96,7 @@ def _adjacent(word1, word2):
         return False
     else:
         return True 
+
 
 def get_text(filename):
     with open(filename, encoding='latin1') as f:
